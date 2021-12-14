@@ -81,9 +81,9 @@ const Checkout = ({ }) => {
                             <tbody>
                               <tr>
                                 <td>
-                                <h3>
-                                  Total: £{total}
-                                </h3>
+                                  <h3>
+                                    Total: £{total}
+                                  </h3>
                                 </td>
                               </tr>
                             </tbody>
@@ -101,7 +101,7 @@ const Checkout = ({ }) => {
                                   </Button>
                                 </td>
                                 <td>
-                                  <Button onClick={() => history.push('/payment')}>
+                                  <Button onClick={() => history.push('/')}>
                                     Checkout
                                   </Button>
                                 </td>
@@ -117,10 +117,10 @@ const Checkout = ({ }) => {
             </tbody>
           </table>
         ) : (
-            <p>
-              {errMsg}
-            </p>
-          )}
+          <p>
+            {errMsg}
+          </p>
+        )}
       </div>
     </div>
   );
